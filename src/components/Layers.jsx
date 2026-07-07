@@ -13,12 +13,12 @@ import {
 
 const sectionWidth =
   'mx-auto w-[min(1180px,calc(100%_-_28px))] sm:w-[min(1180px,calc(100%_-_36px))] md:w-[min(1180px,calc(100%_-_48px))]'
-const kicker = 'text-xs font-bold uppercase tracking-[0.12em] text-[#063849]'
+const kicker = 'text-xs font-bold uppercase tracking-[0.12em] text-[#0f776f]'
 const heading =
-  'text-[clamp(38px,6vw,76px)] font-bold leading-none text-[#10181c]'
+  'text-[clamp(38px,6vw,76px)] font-bold leading-none text-[#063f42]'
 const lead = 'text-[clamp(18px,2vw,23px)] leading-relaxed'
 const sectionPadding = 'py-14 sm:py-16 md:py-24'
-const scrollTarget = 'scroll-mt-32 md:scroll-mt-24'
+const scrollTarget = ''
 
 function Layers() {
   return (
@@ -32,13 +32,13 @@ function Layers() {
           src={heroImage}
           alt="Gentle surf rolling onto a quiet tropical beach with surfboards on the sand"
         />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(255,255,255,0.34),rgba(255,255,255,0.9)_66%,rgba(247,242,231,0.98)),linear-gradient(90deg,rgba(255,255,255,0.74),rgba(255,255,255,0.18))] md:bg-[linear-gradient(90deg,rgba(255,255,255,0.92),rgba(255,255,255,0.74)_32%,rgba(255,255,255,0.18)_68%),linear-gradient(180deg,rgba(255,255,255,0.54),rgba(255,255,255,0.02)_42%,rgba(247,242,231,0.84))]"></div>
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(251,247,232,0.34),rgba(251,247,232,0.9)_66%,rgba(246,239,217,0.98)),linear-gradient(90deg,rgba(251,247,232,0.74),rgba(251,247,232,0.18))] md:bg-[linear-gradient(90deg,rgba(251,247,232,0.92),rgba(251,247,232,0.74)_32%,rgba(251,247,232,0.18)_68%),linear-gradient(180deg,rgba(251,247,232,0.54),rgba(251,247,232,0.02)_42%,rgba(246,239,217,0.84))]"></div>
         <div className="w-full max-w-[700px] md:ml-[clamp(0px,6vw,88px)] xl:ml-[220px]">
           <p className={kicker}>Riding the Waves of Change</p>
-          <h1 className="mt-3 mb-5 max-w-[10ch] text-[clamp(46px,14vw,64px)] font-bold leading-[0.94] text-[#10181c] sm:text-[72px] md:text-[clamp(58px,9vw,120px)] md:leading-[0.92]">
+          <h1 className="mt-3 mb-5 max-w-[10ch] text-[clamp(46px,14vw,64px)] font-bold leading-[0.94] text-[#063f42] sm:text-[72px] md:text-[clamp(58px,9vw,120px)] md:leading-[0.92]">
             Gubat Surf School
           </h1>
-          <p className="max-w-2xl text-[17px] leading-snug text-[#10181c]/80 sm:text-[19px] md:text-[clamp(20px,2vw,28px)] md:leading-tight">
+          <p className="max-w-2xl text-[17px] leading-snug text-[#063f42]/80 sm:text-[19px] md:text-[clamp(20px,2vw,28px)] md:leading-tight">
             From four local surfers in 2010 to a thriving community of over 70
             members, Gubat Surf School is a movement rooted in community,
             environmental stewardship, and the transformative power of the
@@ -46,13 +46,13 @@ function Layers() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#10181c] px-5 text-[15px] font-semibold text-white no-underline shadow-[0_18px_50px_rgba(3,26,34,0.22)] transition hover:-translate-y-0.5"
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#063f42] px-5 text-[15px] font-semibold text-[#fbf7e8] no-underline shadow-[0_18px_50px_rgba(6,63,66,0.22)] transition hover:-translate-y-0.5"
               href="#beginnings"
             >
               Read the story
             </a>
             <a
-              className="inline-flex min-h-11 items-center justify-center rounded-full bg-white/75 px-5 text-[15px] font-semibold text-[#10181c] no-underline shadow-[inset_0_0_0_1px_rgba(22,31,36,0.12)] transition hover:-translate-y-0.5"
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#fbf7e8]/80 px-5 text-[15px] font-semibold text-[#063f42] no-underline shadow-[inset_0_0_0_1px_rgba(6,63,66,0.14)] transition hover:-translate-y-0.5"
               href="#youth"
             >
               Youth mentorship
@@ -65,16 +65,16 @@ function Layers() {
         className="bg-white px-4 py-5 sm:px-5 sm:py-6 md:px-8 md:py-8"
         aria-label="Gubat Surf School highlights"
       >
-        <div className={`${sectionWidth} grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-[#e7e1d6] bg-[#e7e1d6] md:grid-cols-4`}>
+        <div className={`${sectionWidth} grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-[#eadfbd] bg-[#eadfbd] md:grid-cols-4`}>
           {stats.map((item) => (
             <div
               className="bg-white p-5 text-center sm:p-6 md:min-h-36 md:p-8"
               key={item.value}
             >
-              <strong className="block text-[clamp(30px,4vw,52px)] leading-none text-[#10181c]">
+              <strong className="block text-[clamp(30px,4vw,52px)] leading-none text-[#063f42]">
                 {item.value}
               </strong>
-              <span className="mx-auto mt-2 block max-w-48 text-[13px] leading-snug text-[#59676d] sm:mt-3 sm:text-[15px]">
+              <span className="mx-auto mt-2 block max-w-48 text-[13px] leading-snug text-[#4f6665] sm:mt-3 sm:text-[15px]">
                 {item.label}
               </span>
             </div>
@@ -100,22 +100,22 @@ function Layers() {
         <div className="mt-8 grid gap-3 sm:grid-cols-2 md:mt-10 md:grid-cols-4 md:gap-4">
           {beginnings.map((card) => (
             <article
-              className="rounded-lg border border-[#e7e1d6] bg-white/75 p-5 md:min-h-48 md:p-6"
+              className="rounded-lg border border-[#eadfbd] bg-[#fbf7e8]/80 p-5 md:min-h-48 md:p-6"
               key={card.title}
             >
-              <h3 className="text-[22px] font-semibold leading-tight text-[#10181c]">
+              <h3 className="text-[22px] font-semibold leading-tight text-[#063f42]">
                 {card.title}
               </h3>
               <p className="mt-4 text-base leading-relaxed">{card.text}</p>
             </article>
           ))}
         </div>
-        <div className="mt-6 rounded-lg border border-[#e7e1d6] bg-white/80 p-5 md:mt-8 md:p-6">
+        <div className="mt-6 rounded-lg border border-[#eadfbd] bg-[#fbf7e8]/85 p-5 md:mt-8 md:p-6">
           <div className="mb-5 flex flex-col gap-1 md:flex-row md:items-end md:justify-between">
-            <h3 className="text-xl font-semibold text-[#10181c]">
+            <h3 className="text-xl font-semibold text-[#063f42]">
               Growth Journey
             </h3>
-            <p className="text-sm text-[#59676d]">
+            <p className="text-sm text-[#4f6665]">
               From first waves to a growing local association.
             </p>
           </div>
@@ -128,12 +128,12 @@ function Layers() {
                   >
                     {index + 1}
                   </span>
-                  <span className="hidden h-px flex-1 bg-[#e7e1d6] md:block"></span>
+                  <span className="hidden h-px flex-1 bg-[#eadfbd] md:block"></span>
                 </div>
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#277d93]">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#0f776f]">
                   {item.label}
                 </p>
-                <p className="mt-1 text-lg font-semibold text-[#10181c]">
+                <p className="mt-1 text-lg font-semibold text-[#063f42]">
                   {item.value}
                 </p>
               </div>
@@ -143,7 +143,7 @@ function Layers() {
       </section>
 
       <section
-        className={`border-t border-[#e7e1d6] bg-white/50 ${scrollTarget}`}
+        className={`border-t border-[#eadfbd] bg-[#fbf7e8]/55 ${scrollTarget}`}
         id="foundation"
       >
         <div className={`${sectionWidth} ${sectionPadding}`}>
@@ -158,10 +158,10 @@ function Layers() {
           <div className="mt-8 grid gap-3 sm:grid-cols-2 md:mt-10 md:grid-cols-4 md:gap-4">
             {foundation.map((card) => (
               <article
-                className="rounded-lg border border-[#e7e1d6] bg-[#f7f5ee]/70 p-5 md:p-6"
+                className="rounded-lg border border-[#eadfbd] bg-[#f6efd9]/70 p-5 md:p-6"
                 key={card.title}
               >
-                <h3 className="text-[22px] font-semibold leading-tight text-[#10181c]">
+                <h3 className="text-[22px] font-semibold leading-tight text-[#063f42]">
                   {card.title}
                 </h3>
                 <p className="mt-4 text-base leading-relaxed">{card.text}</p>
@@ -172,7 +172,7 @@ function Layers() {
       </section>
 
       <section
-        className={`grid items-center gap-8 bg-[linear-gradient(135deg,rgba(3,44,58,0.94),rgba(31,105,119,0.88)),linear-gradient(180deg,#063849,#62a8a3)] px-4 py-14 text-white sm:px-5 sm:py-16 md:grid-cols-[minmax(0,0.78fr)_minmax(420px,1fr)] md:gap-10 md:px-[max(24px,calc((100vw_-_1180px)/2))] md:py-24 ${scrollTarget}`}
+        className={`grid items-center gap-8 bg-[linear-gradient(135deg,rgba(6,63,66,0.96),rgba(15,119,111,0.9)),linear-gradient(180deg,#063f42,#2b9a8f)] px-4 py-14 text-white sm:px-5 sm:py-16 md:grid-cols-[minmax(0,0.78fr)_minmax(420px,1fr)] md:gap-10 md:px-[max(24px,calc((100vw_-_1180px)/2))] md:py-24 ${scrollTarget}`}
         id="destination"
       >
         <div>
@@ -212,7 +212,7 @@ function Layers() {
                 <div className="grid gap-3" key={item.month}>
                   <div className="flex h-36 items-end rounded-md bg-white/10 p-2 sm:h-40 md:h-48">
                     <div
-                      className={`${item.height} w-full rounded bg-gradient-to-t from-[#e39753] to-white/85`}
+                      className={`${item.height} w-full rounded bg-gradient-to-t from-[#d98b3a] to-[#fbf7e8]`}
                     ></div>
                   </div>
                   <div className="text-center">
@@ -241,10 +241,10 @@ function Layers() {
         <div className="mt-8 grid gap-3 md:mt-10 md:grid-cols-2 md:gap-4">
           {philosophy.map((card) => (
             <article
-              className="rounded-lg border border-[#e7e1d6] bg-white p-5 md:p-6"
+              className="rounded-lg border border-[#eadfbd] bg-[#fbf7e8] p-5 md:p-6"
               key={card.title}
             >
-              <h3 className="text-[22px] font-semibold leading-tight text-[#10181c]">
+              <h3 className="text-[22px] font-semibold leading-tight text-[#063f42]">
                 {card.title}
               </h3>
               <p className="mt-4 text-base leading-relaxed">{card.text}</p>
@@ -254,7 +254,7 @@ function Layers() {
       </section>
 
       <section
-        className={`bg-[#10181c] px-4 py-14 text-white sm:px-5 sm:py-16 md:px-[max(24px,calc((100vw_-_1180px)/2))] md:py-24 ${scrollTarget}`}
+        className={`bg-[#063f42] px-4 py-14 text-white sm:px-5 sm:py-16 md:px-[max(24px,calc((100vw_-_1180px)/2))] md:py-24 ${scrollTarget}`}
         id="youth"
       >
         <p className="text-xs font-bold uppercase tracking-[0.12em] text-white/80">
@@ -309,8 +309,8 @@ function Layers() {
             a community-driven surf movement in the Bicol region.
           </p>
           <a
-            className="mt-8 inline-flex min-h-11 items-center justify-center rounded-full bg-[#10181c] px-5 text-[15px] font-semibold text-white no-underline shadow-[0_18px_50px_rgba(3,26,34,0.22)] transition hover:-translate-y-0.5"
-            href="https://maps.google.com/?q=Rizal+Beach+Gubat+Sorsogon"
+            className="mt-8 inline-flex min-h-11 items-center justify-center rounded-full bg-[#063f42] px-5 text-[15px] font-semibold text-[#fbf7e8] no-underline shadow-[0_18px_50px_rgba(6,63,66,0.22)] transition hover:-translate-y-0.5"
+            href="https://maps.app.goo.gl/ThDmhrGwNE2oKgHi8"
             target="_blank"
             rel="noreferrer"
           >

@@ -33,10 +33,10 @@ export const beginnings = [
 ]
 
 export const growthTimeline = [
-  { label: '2010', value: '4 surfers', tone: 'bg-[#063849]' },
-  { label: 'Discovery', value: 'Rizal Beach', tone: 'bg-[#277d93]' },
-  { label: 'GSSA', value: 'Organized community', tone: 'bg-[#62a8a3]' },
-  { label: 'Today', value: '70+ members', tone: 'bg-[#e39753]' },
+  { label: '2010', value: '4 surfers', tone: 'bg-[#063f42]' },
+  { label: 'Discovery', value: 'Rizal Beach', tone: 'bg-[#0f776f]' },
+  { label: 'GSSA', value: 'Organized community', tone: 'bg-[#2b9a8f]' },
+  { label: 'Today', value: '70+ members', tone: 'bg-[#d98b3a]' },
 ]
 
 export const foundation = [
