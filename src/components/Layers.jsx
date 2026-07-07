@@ -62,13 +62,13 @@ function Layers() {
       </section>
 
       <section
-        className="border-y border-[#e7e1d6] bg-[#e7e1d6]"
+        className="bg-white px-5 py-6 md:px-8 md:py-8"
         aria-label="Gubat Surf School highlights"
       >
-        <div className={`${sectionWidth} grid gap-px bg-[#e7e1d6] md:grid-cols-4`}>
+        <div className={`${sectionWidth} grid gap-px overflow-hidden rounded-lg border border-[#e7e1d6] bg-[#e7e1d6] md:grid-cols-4`}>
           {stats.map((item) => (
             <div
-              className="bg-white/90 p-7 text-center md:min-h-36 md:p-8"
+              className="bg-white p-7 text-center md:min-h-36 md:p-8"
               key={item.value}
             >
               <strong className="block text-[clamp(30px,4vw,52px)] leading-none text-[#10181c]">
